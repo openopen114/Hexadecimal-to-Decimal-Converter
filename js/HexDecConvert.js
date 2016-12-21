@@ -9,7 +9,7 @@ $("button#Hex2Dec").on("click", function() {
 
 $("button#Dec2Hex").on("click", function() {
 	var DecInput = $("#DecInput").val();
-	var Dec2Hex = Number(DecInput).toString(16); 
+	var Dec2Hex = Number(DecInput).toString(16).toUpperCase(); 
 	$("#Dec2HexOutput").text("Dec2Hex: "+Dec2Hex);
  	console.log("button#Dec2Hex!:"+DecInput); 
  	console.log("button#Dec2Hex!:"+Dec2Hex); 
